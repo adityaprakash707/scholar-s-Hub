@@ -1949,3 +1949,127 @@ for Other Page
 .starter-section {
   /* Add your styles here */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+        /* General Page Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Container for the Message Section */
+        .director-message-container {
+            background-color: #ffffff;
+            max-width: auto;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #2c3e50; /* Accent color bar */
+        }
+
+        /* Section Heading */
+        .director-message-container h2 {
+            color: #2c3e50;
+            margin-top: 0;
+            margin-bottom: 30px;
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+        }
+
+        /* Flex Wrapper to hold Image and Text side-by-side */
+        .message-content {
+            display: flex;
+            align-items: flex-start; /* Aligns items to top */
+            gap: 30px; /* Space between image and text */
+        }
+
+        /* Image Styling */
+        .director-photo {
+            flex-shrink: 0; /* Prevents image from shrinking */
+            width: 200px;
+            height: 200px;
+            border-radius: 50%; /* Makes the image round */
+            object-fit: cover; /* Ensures image doesn't stretch */
+            border: 4px solid #e0e0e0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Text Area Styling */
+        .text-area {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .text-area p {
+            margin-bottom: 15px;
+        }
+
+        /* Signature / Name Styling */
+        .director-sign-off {
+            margin-top: 20px;
+            font-style: italic;
+        }
+
+        .director-name {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 1.1rem;
+            display: block;
+            margin-top: 5px;
+        }
+
+        .director-title {
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .message-content {
+                flex-direction: column; /* Stack vertically on small screens */
+                align-items: center;
+                text-align: center;
+            }
+
+            .director-photo {
+                width: 150px;
+                height: 150px;
+                margin-bottom: 20px;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+/* Optional: Show overlay on hover */
+.circle-container:hover .overlay {
+    opacity: 1;
+}
